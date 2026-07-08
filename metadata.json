@@ -1,0 +1,6 @@
+{
+  "name": "Karnataka Gym",
+  "description": "A premium, responsive, modern fitness website for Karnataka Gym, featuring animated elements, comprehensive calculators (BMI, Calories, Water, Protein, Body Fat), a live booking form integrated with WhatsApp, trainer showcases, and a visual styling theme of luxury matte dark charcoal and electric orange.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
