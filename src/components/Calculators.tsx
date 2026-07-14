@@ -110,7 +110,7 @@ export default function Calculators() {
 
     // Climate addition
     let climateAdd = 0;
-    if (waterClimate === 'hot') climateAdd = 0.7; // hot Bangalore summer
+    if (waterClimate === 'hot') climateAdd = 0.7; // hot Belagavi summer
     else if (waterClimate === 'cold') climateAdd = -0.3;
 
     const total = parseFloat((baseWater + workoutAdd + climateAdd).toFixed(2));
@@ -445,7 +445,7 @@ export default function Calculators() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-neutral-400 mb-1 uppercase">Bengaluru Seasonal Climate</label>
+                  <label className="block text-xs font-semibold text-neutral-400 mb-1 uppercase">Belagavi Seasonal Climate</label>
                   <select
                     id="select-water-climate"
                     value={waterClimate}

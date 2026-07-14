@@ -79,15 +79,14 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
-          
-          {/* COLUMN 1: CONTACT CARD DETAILS & MAP */}
-          <div className="lg:col-span-5 space-y-6 flex flex-col justify-between">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
             
-            <div className="glass-card p-6 rounded-2xl border border-neutral-800 space-y-6">
+            {/* COLUMN 1: CONTACT CARD DETAILS */}
+            <div className="glass-card p-6 md:p-8 rounded-2xl border border-neutral-800 space-y-6 flex flex-col justify-between">
               
               <h3 className="font-display font-bold text-lg text-white uppercase tracking-wider border-b border-neutral-900 pb-3">
-                Karnataka Gym MG Road
+                Jairaj Fitness Gym Belagavi
               </h3>
 
               <div className="space-y-4">
@@ -100,7 +99,7 @@ export default function Contact() {
                   <div>
                     <span className="block font-bold text-white uppercase text-[9px] tracking-wider mb-0.5">Physical Gym Address</span>
                     <p className="text-neutral-400 leading-normal">
-                      Karnataka Gym, MG Road, Bengaluru, Karnataka - 560001
+                      Beside Lokmanya Society Head Office Road, Belagavi, Karnataka - 590006
                     </p>
                   </div>
                 </div>
@@ -112,8 +111,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <span className="block font-bold text-white uppercase text-[9px] tracking-wider mb-0.5">Call Desk Coordination</span>
-                    <a href="tel:+919876543210" className="text-neutral-400 hover:text-white transition-colors block">
-                      +91 98765 43210
+                    <a href="tel:+917795559029" className="text-neutral-400 hover:text-white transition-colors block">
+                      +91 77955 59029
                     </a>
                   </div>
                 </div>
@@ -125,8 +124,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <span className="block font-bold text-white uppercase text-[9px] tracking-wider mb-0.5">Corporate Email</span>
-                    <a href="mailto:info@karnatakagym.com" className="text-neutral-400 hover:text-white transition-colors block">
-                      info@karnatakagym.com
+                    <a href="mailto:info@jairajfitnessgym.co.in" className="text-neutral-400 hover:text-white transition-colors block">
+                      info@jairajfitnessgym.co.in
                     </a>
                   </div>
                 </div>
@@ -140,7 +139,7 @@ export default function Contact() {
                     <span className="block font-bold text-white uppercase text-[9px] tracking-wider mb-1">Weekly Operating Hours</span>
                     <div className="flex justify-between text-neutral-400 font-mono text-[11px] leading-relaxed">
                       <span>Mon – Sat:</span>
-                      <span className="text-white font-bold">5:00 AM – 11:00 PM</span>
+                      <span className="text-white font-bold">5:30 AM – 10:00 PM</span>
                     </div>
                     <div className="flex justify-between text-neutral-400 font-mono text-[11px] leading-relaxed mt-0.5">
                       <span>Sunday:</span>
@@ -153,129 +152,18 @@ export default function Contact() {
             </div>
 
             {/* Google Map Frame */}
-            <div className="rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-900 aspect-video h-[200px] shrink-0">
+            <div className="rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-900 h-full min-h-[320px]">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9714349942735!2d77.60838181180214!3d12.973656387280838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167e41fa80c1%3A0xc49d012423efef!2sM%20G%20Road%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1711200000000!5m2!1sen!2sin"
-                className="w-full h-full border-0 filter grayscale invert contrast-110 opacity-75"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.2571212879555!2d74.5126848!3d15.8458778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbf669cc5a706ef%3A0xc6cbfa866d92ec0a!2sJairaj%20Fitness%20Gym!5e0!3m2!1sen!2sin!4v1711200000000!5m2!1sen!2sin"
+                className="w-full h-full border-0 filter grayscale invert contrast-110 opacity-75 min-h-[320px]"
                 allowFullScreen={false}
                 loading="lazy"
-                title="Karnataka Gym Google Map MG Road Bengaluru"
+                title="Jairaj Fitness Gym Google Map Belagavi"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
 
           </div>
-
-          {/* COLUMN 2: PREMIUM MESSAGE SUBMISSION FORM */}
-          <div className="lg:col-span-7 glass-card p-6 md:p-8 rounded-2xl border border-neutral-800 flex flex-col justify-between">
-            <div>
-              <div className="mb-6">
-                <h3 className="font-display font-bold text-xl text-white uppercase tracking-wider">Send Direct Query</h3>
-                <p className="text-xs text-neutral-400 mt-1">Our customer service team is active 24/7 to resolve member concerns.</p>
-              </div>
-
-              {/* Success notification */}
-              <AnimatePresence>
-                {isSuccess && (
-                  <motion.div
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0 }}
-                    className="p-4 rounded-xl bg-green-950/40 border border-green-500/30 flex items-center gap-3 text-green-300 mb-6"
-                  >
-                    <CheckCircle2 className="text-green-500 shrink-0" size={20} />
-                    <div>
-                      <p className="font-semibold text-xs uppercase tracking-wider">Message Sent Successfully!</p>
-                      <p className="text-[11px] text-green-400/90 leading-tight">Thank you. Our MG Road coordinator will email/call you within 2-4 working hours.</p>
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-
-              <form onSubmit={handleSubmit} className="space-y-4">
-                
-                {/* Name */}
-                <div>
-                  <label className="block text-xs font-semibold text-neutral-400 mb-1 uppercase tracking-wider">Full Name *</label>
-                  <input
-                    id="input-contact-name"
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="e.g. Ramesh Kumar"
-                    className={`w-full bg-neutral-900/60 border ${errors.name ? 'border-red-500' : 'border-neutral-800'} focus:border-electric-orange rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-neutral-600 outline-none transition-colors duration-200`}
-                  />
-                  {errors.name && (
-                    <p className="text-red-500 text-[10px] mt-1 flex items-center gap-1"><AlertCircle size={11} /> {errors.name}</p>
-                  )}
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {/* Email */}
-                  <div>
-                    <label className="block text-xs font-semibold text-neutral-400 mb-1 uppercase tracking-wider">Email Address *</label>
-                    <input
-                      id="input-contact-email"
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      placeholder="e.g. ramesh@gmail.com"
-                      className={`w-full bg-neutral-900/60 border ${errors.email ? 'border-red-500' : 'border-neutral-800'} focus:border-electric-orange rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-neutral-600 outline-none transition-colors duration-200`}
-                    />
-                    {errors.email && (
-                      <p className="text-red-500 text-[10px] mt-1 flex items-center gap-1"><AlertCircle size={11} /> {errors.email}</p>
-                    )}
-                  </div>
-
-                  {/* Phone */}
-                  <div>
-                    <label className="block text-xs font-semibold text-neutral-400 mb-1 uppercase tracking-wider">Phone Number *</label>
-                    <input
-                      id="input-contact-phone"
-                      type="tel"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      placeholder="e.g. 9876543210"
-                      className={`w-full bg-neutral-900/60 border ${errors.phone ? 'border-red-500' : 'border-neutral-800'} focus:border-electric-orange rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-neutral-600 outline-none transition-colors duration-200`}
-                    />
-                    {errors.phone && (
-                      <p className="text-red-500 text-[10px] mt-1 flex items-center gap-1"><AlertCircle size={11} /> {errors.phone}</p>
-                    )}
-                  </div>
-                </div>
-
-                {/* Message */}
-                <div>
-                  <label className="block text-xs font-semibold text-neutral-400 mb-1 uppercase tracking-wider">Your Message *</label>
-                  <textarea
-                    id="textarea-contact-message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    rows={4}
-                    placeholder="Describe your fitness targets, query, or customized class timings..."
-                    className={`w-full bg-neutral-900/60 border ${errors.message ? 'border-red-500' : 'border-neutral-800'} focus:border-electric-orange rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-neutral-600 outline-none transition-colors duration-200 resize-none`}
-                  ></textarea>
-                  {errors.message && (
-                    <p className="text-red-500 text-[10px] mt-1 flex items-center gap-1"><AlertCircle size={11} /> {errors.message}</p>
-                  )}
-                </div>
-
-                <button
-                  id="btn-contact-submit"
-                  type="submit"
-                  className="w-full bg-electric-orange hover:bg-electric-orange-hover text-white py-3 rounded-lg text-xs font-bold uppercase tracking-wider transition-colors duration-200 flex items-center justify-center gap-2 shadow-lg shadow-electric-orange/15 cursor-pointer mt-4"
-                >
-                  Send Message <Send size={13} />
-                </button>
-
-              </form>
-            </div>
-          </div>
-
         </div>
 
       </div>

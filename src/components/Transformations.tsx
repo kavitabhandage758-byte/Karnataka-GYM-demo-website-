@@ -28,7 +28,7 @@ export default function Transformations() {
             TRANSFORMATION STORIES
           </h2>
           <p className="text-sm text-neutral-400">
-            Slide and compare the visual shifts of our Bangalore members who trusted the Karnataka Gym training system.
+            Slide and compare the visual shifts of our Belagavi members who trusted the Jairaj Fitness Gym training system.
           </p>
         </div>
 

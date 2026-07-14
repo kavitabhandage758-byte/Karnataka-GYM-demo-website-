@@ -52,7 +52,7 @@ export default function Testimonials() {
             TESTIMONIALS
           </h2>
           <p className="text-sm text-neutral-400">
-            Hear directly from our active Bengaluru athletes and professionals who have unlocked sustainable, physical wellness.
+            Hear directly from our active Belagavi athletes and professionals who have unlocked sustainable, physical wellness.
           </p>
         </div>
 

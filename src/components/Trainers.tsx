@@ -6,13 +6,13 @@ import { trainersData } from '../data';
 export default function Trainers() {
   
   const handleBookTrainerWhatsApp = (trainerName: string) => {
-    const msg = `Hello Karnataka Gym, I would like to book a personal training consultation with Coach ${trainerName}. Please share coach block timings.`;
-    window.open(`https://wa.me/919876543210?text=${encodeURIComponent(msg)}`, '_blank');
+    const msg = `Hello Jairaj Fitness Gym, I would like to book a personal training consultation with Coach ${trainerName}. Please share coach block timings.`;
+    window.open(`https://wa.me/917795559029?text=${encodeURIComponent(msg)}`, '_blank');
   };
 
   const handleMessageTrainerWhatsApp = (trainerName: string) => {
     const msg = `Hello, I would like to send a direct query to Coach ${trainerName} regarding fitness/nutrition parameters.`;
-    window.open(`https://wa.me/919876543210?text=${encodeURIComponent(msg)}`, '_blank');
+    window.open(`https://wa.me/917795559029?text=${encodeURIComponent(msg)}`, '_blank');
   };
 
   return (

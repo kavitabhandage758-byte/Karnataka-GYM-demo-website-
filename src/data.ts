@@ -2,130 +2,94 @@ import { Program, Trainer, MembershipTier, GalleryItem, Transformation, Testimon
 
 export const programsData: Program[] = [
   {
-    id: 'strength',
-    title: 'Strength Training',
-    iconName: 'Dumbbell',
-    description: 'Build robust raw power and enhance bone density using free weights, compound lifts, and progressive overload under expert guidance.',
-    duration: '45-60 mins',
-    intensity: 'Intermediate',
-    benefits: ['Increase muscle mass', 'Enhance metabolic rate', 'Support joint health']
-  },
-  {
-    id: 'hiit',
-    title: 'HIIT Training',
+    id: 'hiit-classes',
+    title: 'HIIT exercise classes',
     iconName: 'Flame',
-    description: 'High-Intensity Interval Training designed to spike your heart rate and maximize calorie burn during and long after your session.',
-    duration: '30-45 mins',
+    description: 'High-intensity interval training workouts to maximize fat burn, spike cardiovascular endurance, and challenge your body.',
+    duration: '45 mins',
     intensity: 'Advanced',
-    benefits: ['Rapid cardiovascular boost', 'Exceptional calorie deficit', 'Time-efficient workouts']
+    benefits: ['Burn extreme calories', 'Enhance metabolic rate', 'Build physical endurance']
   },
   {
-    id: 'cardio',
-    title: 'Cardio Fitness',
-    iconName: 'HeartPulse',
-    description: 'Condition your cardiovascular system with variable pacing on top-tier treadmill, elliptical, and rowing technologies.',
-    duration: '45 mins',
-    intensity: 'Beginner',
-    benefits: ['Improve lung capacity', 'Boost daily endurance', 'Support heart longevity']
-  },
-  {
-    id: 'boxing',
-    title: 'Boxing Fitness',
-    iconName: 'Zap',
-    description: 'Combine rapid hand-eye coordination drills with heavy bag training and core conditioning to unleash your inner fighter.',
-    duration: '50 mins',
-    intensity: 'Intermediate',
-    benefits: ['Relieve mental stress', 'Sculpt upper body & core', 'Sharpen agility & reflexes']
-  },
-  {
-    id: 'fat-loss',
-    title: 'Fat Loss Program',
-    iconName: 'TrendingDown',
-    description: 'A scientifically structured combination of targeted resistance workouts, continuous cardio, and strict nutrition tracking.',
-    duration: '60 mins',
-    intensity: 'All Levels',
-    benefits: ['Sustainable weight reduction', 'Accelerate overall metabolism', 'Tone muscular silhouette']
-  },
-  {
-    id: 'muscle',
-    title: 'Muscle Building',
-    iconName: 'Sparkles',
-    description: 'Hypertrophy-focused training programs emphasizing perfect eccentric control, specific high-volume sets, and localized pump.',
-    duration: '60 mins',
-    intensity: 'Intermediate',
-    benefits: ['Symmetrical muscle hypertrophy', 'Increase muscular endurance', 'Maximize strength leverage']
-  },
-  {
-    id: 'yoga',
-    title: 'Yoga',
-    iconName: 'Leaf',
-    description: 'Calm your mind and lengthen tight muscle fibers with fluid Vinyasa flow, deep breathing exercises, and static balance holds.',
-    duration: '60 mins',
-    intensity: 'All Levels',
-    benefits: ['Incredible flexibility', 'Correct postural imbalances', 'Mental clarity and calm']
-  },
-  {
-    id: 'functional',
-    title: 'Functional Training',
+    id: 'aerobics',
+    title: 'Aerobics',
     iconName: 'Activity',
-    description: 'Movements designed to mirror everyday activities, strengthening core stabilizers, physical balance, and multi-planar mobility.',
-    duration: '45 mins',
+    description: 'Rhythmic, high-energy cardio choreographies designed to improve coordination, cardiovascular fitness, and overall stamina.',
+    duration: '50 mins',
     intensity: 'Beginner',
-    benefits: ['Enhanced body awareness', 'Injury prevention structure', 'Total-body multi-joint strength']
-  },
-  {
-    id: 'cycling',
-    title: 'Indoor Cycling',
-    iconName: 'Bike',
-    description: 'Immersive rhythmic cycling classes set to high-energy playlists with variable resistances and interval hill-climbs.',
-    duration: '45 mins',
-    intensity: 'Intermediate',
-    benefits: ['High lower-body power', 'Low-impact joint cardio', 'Intense endurance building']
+    benefits: ['Enhance coordination', 'Boost lung capacity', 'Elevate mood and energy']
   },
   {
     id: 'crossfit',
-    title: 'CrossFit',
+    title: 'Crossfit',
     iconName: 'ShieldAlert',
-    description: 'Constantly varied, high-intensity functional movements incorporating Olympic weightlifting, gymnastics, and metabolic conditioning.',
+    description: 'Slam kettlebells, swing ropes, lift Olympic bars, and push your physical envelope in our community-centric functional workouts.',
     duration: '60 mins',
     intensity: 'Advanced',
-    benefits: ['Unrivaled overall fitness', 'High functional capacity', 'Strong community camaraderie']
+    benefits: ['Build explosive power', 'Develop raw strength', 'Boost agility and speed']
   },
   {
-    id: 'womens-fitness',
-    title: "Women's Fitness",
-    iconName: 'UserRound',
-    description: 'Specialized strength, core, and metabolic conditioning targeting hormone balance, bone density, and lean body sculpting.',
-    duration: '50 mins',
+    id: 'dance-fitness',
+    title: 'Dance fitness classes',
+    iconName: 'Music',
+    description: 'Fusion of popular international rhythms and aerobic physical moves to offer an amazing calorie-burning, fun fitness experience.',
+    duration: '45 mins',
     intensity: 'All Levels',
-    benefits: ['Strengthen pelvic/glute chain', 'Tone and firm muscle tissue', 'Empowering workout environment']
+    benefits: ['Full-body styling & tone', 'Incredible stress relief', 'High-energy cardiovascular session']
   },
   {
-    id: 'senior-fitness',
-    title: 'Senior Citizen Fitness',
-    iconName: 'Heart',
-    description: 'Gentle mobility workouts focusing on preserving joints, improving functional range of motion, and building stability against falls.',
-    duration: '40 mins',
-    intensity: 'Beginner',
-    benefits: ['Improve joint lubrication', 'Build secure daily balance', 'Social community engagement']
+    id: 'personal-training',
+    title: 'Personal training',
+    iconName: 'UserRound',
+    description: 'Receive bespoke workouts, posture analysis, nutrition guidance, and 1-on-1 coaching adapted precisely to your body and goals.',
+    duration: '60 mins',
+    intensity: 'All Levels',
+    benefits: ['Bespoke program design', 'Assured form correction', 'Fast physical results']
   },
   {
-    id: 'teen-fitness',
-    title: 'Teen Fitness',
-    iconName: 'Swords',
-    description: 'Safe, foundational posture habits, strength techniques, and aerobic games to set a positive, lifetime attitude toward health.',
+    id: 'weight-training',
+    title: 'Weight training',
+    iconName: 'Dumbbell',
+    description: 'Utilize premium biomechanical machines, free barbells, and dumbells to stimulate muscle hypertrophy and increase bone density.',
+    duration: '60 mins',
+    intensity: 'Intermediate',
+    benefits: ['Build dense muscle tissue', 'Elevate structural strength', 'Enhance bone mineral density']
+  },
+  {
+    id: 'nutrition-consulting',
+    title: 'Nutrition consulting',
+    iconName: 'Apple',
+    description: 'Collaborate with clinical dietitians to custom formulate macro-nutrient ratios, hydration standards, and daily meal planners.',
+    duration: '30 mins',
+    intensity: 'All Levels',
+    benefits: ['Customized meal patterns', 'Accelerate weight targets', 'Understand micro-nutrition basics']
+  },
+  {
+    id: 'cycling',
+    title: 'Cycling',
+    iconName: 'Bike',
+    description: 'Climb digital hills, sprint through intervals, and condition your lower body on our high-performance indoor cycle trainers.',
+    duration: '45 mins',
+    intensity: 'Intermediate',
+    benefits: ['Zero impact on knee joints', 'Exceptional quad conditioning', 'Elevated cardio stamina']
+  },
+  {
+    id: 'spa-services',
+    title: 'Spa services',
+    iconName: 'Sparkles',
+    description: 'Decompress from intense lifts with relaxing steam chambers, professional recovery massages, and muscle-soothing sauna rooms.',
+    duration: '45 mins',
+    intensity: 'All Levels',
+    benefits: ['Accelerate muscle healing', 'Alleviate neural stress', 'Rehydrate and cleanse skin']
+  },
+  {
+    id: 'cardio',
+    title: 'Cardio',
+    iconName: 'HeartPulse',
+    description: 'Condition your aerobic engines on high-end treadmills, modern stairmills, and physical rowing units with real-time vitals tracking.',
     duration: '45 mins',
     intensity: 'Beginner',
-    benefits: ['Build motor-control basics', 'Foster screen-free activity', 'Increase teen confidence']
-  },
-  {
-    id: 'athlete',
-    title: 'Athlete Conditioning',
-    iconName: 'Trophy',
-    description: 'Sport-specific speed, explosive vertical power, lateral agility metrics, and reaction coaching for competitive elite performance.',
-    duration: '75 mins',
-    intensity: 'Advanced',
-    benefits: ['Peak reaction parameters', 'Maximum rotational torque', 'Injury resistance conditioning']
+    benefits: ['Enhance cardiovascular health', 'Optimize resting heart rate', 'Increase daily endurance']
   }
 ];
 
@@ -173,7 +137,7 @@ export const membershipData: MembershipTier[] = [
       'Unlimited steam, sauna, & towels access',
       'Priority customer & booking support',
       'Access to premium recovery lounge',
-      'Complimentary Karnataka Gym custom bottle & t-shirt'
+      'Complimentary Jairaj Fitness Gym custom bottle & t-shirt'
     ]
   }
 ];
@@ -267,7 +231,7 @@ export const galleryData: GalleryItem[] = [
   },
   {
     id: 'g6',
-    title: 'Annual Karnataka Gym Championship',
+    title: 'Annual Jairaj Fitness Gym Championship',
     category: 'events',
     image: 'https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&q=80'
   },
@@ -323,7 +287,7 @@ export const testimonialsData: Testimonial[] = [
     rating: 5,
     role: 'IT Consultant',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
-    review: 'Karnataka Gym has totally changed my weekly routine. The trainers vikram and anjali custom designed a program for my back pain. Six months in, I am entirely pain-free and stronger than ever!'
+    review: 'Jairaj Fitness Gym has totally changed my weekly routine. The trainers vikram and anjali custom designed a program for my back pain. Six months in, I am entirely pain-free and stronger than ever!'
   },
   {
     id: 'r-2',
@@ -347,7 +311,7 @@ export const testimonialsData: Testimonial[] = [
     rating: 4.8,
     role: 'Homemaker',
     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80',
-    review: 'The coaches are extremely patient and emphasize proper joint safety over heavy lift counts. The custom locker security and cleanliness standards are top-notch in Bengaluru.'
+    review: 'The coaches are extremely patient and emphasize proper joint safety over heavy lift counts. The custom locker security and cleanliness standards are top-notch in Belagavi.'
   },
   {
     id: 'r-5',
@@ -433,12 +397,12 @@ export const faqData: FAQItem[] = [
   {
     id: 'faq-2',
     question: 'Are personal trainers available at all times?',
-    answer: 'Yes! Certified coaches are active on the gym floor during all operating hours from 5:00 AM to 11:00 PM. General trainers are free to assist you with equipment setups, while dedicated 1-on-1 personal coaches can be booked for specific time blocks.'
+    answer: 'Yes! Certified coaches are active on the gym floor during all operating hours from 5:30 AM to 10:00 PM. General trainers are free to assist you with equipment setups, while dedicated 1-on-1 personal coaches can be booked for specific time blocks.'
   },
   {
     id: 'faq-3',
     question: 'Is there safe, dedicated parking available at the gym?',
-    answer: 'Absolutely. Karnataka Gym at MG Road Bengaluru provides dedicated, security-guarded car parking and multi-slot two-wheeler spaces free of charge for all active members.'
+    answer: 'Absolutely. Jairaj Fitness Gym in Belagavi provides dedicated, security-guarded car parking and multi-slot two-wheeler spaces free of charge for all active members.'
   },
   {
     id: 'faq-4',

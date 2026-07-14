@@ -124,7 +124,7 @@ export default function BookingForm({ isOpen = false, onClose, preselectedProgra
     setIsSuccess(true);
 
     // Format WhatsApp message
-    const message = `Hello Karnataka Gym, I would like to book a session/membership!
+    const message = `Hello Jairaj Fitness Gym, I would like to book a session/membership!
 
 *BOOKING DETAILS:*
 ━━━━━━━━━━━━━━━━━━━━
@@ -141,7 +141,7 @@ export default function BookingForm({ isOpen = false, onClose, preselectedProgra
 Thank you. Please confirm my premium booking slot!`;
 
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/919876543210?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/917795559029?text=${encodedMessage}`;
 
     setTimeout(() => {
       window.open(whatsappUrl, '_blank');
@@ -197,7 +197,7 @@ Thank you. Please confirm my premium booking slot!`;
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            placeholder="e.g. 9876543210"
+            placeholder="e.g. 7795559029"
             className={`w-full bg-neutral-900 border ${errors.phone ? 'border-red-500' : 'border-neutral-800'} focus:border-electric-orange rounded-lg px-3.5 py-2.5 text-sm text-white placeholder-neutral-600 outline-none transition-colors duration-200`}
           />
           {errors.phone && (
@@ -371,7 +371,7 @@ Thank you. Please confirm my premium booking slot!`;
             className="mt-1 accent-electric-orange w-4 h-4 rounded"
           />
           <span className="text-xs text-neutral-400 leading-normal">
-            I certify that all details above are accurate and I agree to the <span className="text-electric-orange hover:underline">Karnataka Gym liability waivers</span> and safety terms.
+            I certify that all details above are accurate and I agree to the <span className="text-electric-orange hover:underline">Jairaj Fitness Gym liability waivers</span> and safety terms.
           </span>
         </label>
         {errors.agreeToTerms && (
@@ -405,7 +405,7 @@ Thank you. Please confirm my premium booking slot!`;
     return (
       <div className="glass-card p-6 md:p-8 rounded-2xl border border-neutral-800/80">
         <div className="mb-6">
-          <h3 className="font-display font-semibold text-xl md:text-2xl text-white">Join the Karnataka Gym Elite</h3>
+          <h3 className="font-display font-semibold text-xl md:text-2xl text-white">Join the Jairaj Fitness Gym Elite</h3>
           <p className="text-xs text-neutral-400 mt-1">Submit your details. This redirects instantly to prefill a WhatsApp message to book your membership desk immediately.</p>
         </div>
         {formFields}

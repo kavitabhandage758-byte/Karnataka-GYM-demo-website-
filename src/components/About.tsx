@@ -70,7 +70,7 @@ export default function About() {
             <div className="relative rounded-2xl overflow-hidden aspect-[4/5] border border-neutral-800">
               <img 
                 src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=700&q=80" 
-                alt="Why Karnataka Gym?" 
+                alt="Why Jairaj Fitness Gym?" 
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
@@ -79,11 +79,11 @@ export default function About() {
               {/* Overlay quote card */}
               <div className="absolute bottom-6 left-6 right-6 p-5 glass-card rounded-xl border border-white/5 space-y-2">
                 <p className="text-xs text-neutral-300 italic">
-                  "At Karnataka Gym, we believe fitness is more than lifting weights—it is building confidence, discipline, and a healthier lifestyle."
+                  "At Jairaj Fitness Gym, we believe fitness is more than lifting weights—it is building confidence, discipline, and a healthier lifestyle."
                 </p>
                 <div className="flex items-center gap-2">
                   <div className="w-5 h-5 bg-electric-orange rounded-full flex items-center justify-center text-[10px] text-white font-bold">✓</div>
-                  <span className="text-[10px] text-white font-bold uppercase tracking-wider">Karnataka Gym Core Philosophy</span>
+                  <span className="text-[10px] text-white font-bold uppercase tracking-wider">Jairaj Gym Core Philosophy</span>
                 </div>
               </div>
             </div>
@@ -96,12 +96,12 @@ export default function About() {
           {/* Right: Text and Feature Checklist */}
           <div className="lg:col-span-7 space-y-8">
             <div className="space-y-3">
-              <span className="text-xs font-bold text-electric-orange uppercase tracking-widest block">About Karnataka Gym</span>
+              <span className="text-xs font-bold text-electric-orange uppercase tracking-widest block">About Jairaj Fitness Gym</span>
               <h2 className="font-display font-black text-3xl md:text-5xl text-white tracking-tight">
-                WHY KARNATAKA GYM?
+                WHY JAIRAJ FITNESS GYM?
               </h2>
               <p className="text-sm text-neutral-400 leading-relaxed">
-                At Karnataka Gym, we believe fitness is more than lifting weights—it's building confidence, discipline, and a healthier lifestyle. Our expert trainers, modern facilities, and customized workout plans help every member achieve their goals safely and efficiently. Located in the heart of Bengaluru, we provide an elite environment for true physical transformations.
+                At Jairaj Fitness Gym, we believe fitness is more than lifting weights—it's building confidence, discipline, and a healthier lifestyle. Our expert trainers, modern facilities, and customized workout plans help every member achieve their goals safely and efficiently. Located in Belagavi, we provide an elite environment for true physical transformations, fully loaded with all the imported grade equipment.
               </p>
             </div>
 
@@ -131,11 +131,11 @@ export default function About() {
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
-            <Counter value={5000} suffix="+" label="Active Gym Members" />
-            <Counter value={12000} suffix="+" label="1-on-1 PT Sessions" />
+            <Counter value={5240} suffix="+" label="Active Gym Members" />
+            <Counter value={15000} suffix="+" label="1-on-1 PT Sessions" />
             <Counter value={25} suffix="+" label="Certified Coaches" />
-            <Counter value={1800} suffix="+" label="Transformation Stories" />
-            <Counter value={12} suffix="+" label="Years of Experience" />
+            <Counter value={2000} suffix="+" label="Transformation Stories" />
+            <Counter value={20} suffix="+" label="Years of Experience" />
           </div>
         </div>
 

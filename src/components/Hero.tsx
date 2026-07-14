@@ -37,7 +37,7 @@ export default function Hero({ onOpenBookingModal }: HeroProps) {
           animate={{ scale: 1.02 }}
           transition={{ duration: 10, ease: 'easeOut' }}
           src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1920&q=85" 
-          alt="Karnataka Gym Training Floor" 
+          alt="Jairaj Fitness Gym Training Floor" 
           className="w-full h-full object-cover object-center opacity-45"
         />
       </div>
@@ -60,7 +60,7 @@ export default function Hero({ onOpenBookingModal }: HeroProps) {
               className="inline-flex items-center gap-2 px-3 py-1 bg-neutral-900/80 border border-neutral-800 rounded-full text-xs font-semibold uppercase tracking-wider text-neutral-300"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-electric-orange animate-pulse" />
-              BENGALURU'S PREMIER LUXURY FITNESS HUB
+              BELAGAVI'S PREMIER FITNESS DESTINATION
             </motion.div>
 
             {/* Main Display Typography */}
@@ -119,7 +119,7 @@ export default function Hero({ onOpenBookingModal }: HeroProps) {
 
               <a
                 id="btn-hero-whatsapp"
-                href="https://wa.me/919876543210?text=Hello%20Karnataka%20Gym%2C%20I%20would%20like%20to%20know%20more%20about%20your%20membership%20plans."
+                href="https://wa.me/917795559029?text=Hello%20Jairaj%20Fitness%20Gym%2C%20I%20would%20like%20to%20know%20more%20about%20your%20membership%20plans."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-650 hover:bg-green-700 text-white text-xs font-bold py-4 px-6 rounded-lg uppercase tracking-wider transition-all cursor-pointer flex items-center gap-2 border border-green-500/20"

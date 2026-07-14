@@ -25,7 +25,7 @@ export default function FAQ() {
             FREQUENTLY ASKED QUESTIONS
           </h2>
           <p className="text-sm text-neutral-400">
-            Have queries regarding timing, policies, or gear? Here are rapid answers to our prospective Karnataka Gym members.
+            Have queries regarding timing, policies, or gear? Here are rapid answers to our prospective Jairaj Fitness Gym members.
           </p>
         </div>
 

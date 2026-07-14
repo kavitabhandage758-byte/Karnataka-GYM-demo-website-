@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { 
   Dumbbell, Flame, HeartPulse, Zap, TrendingDown, Sparkles, 
   Leaf, Activity, Bike, ShieldAlert, UserRound, Heart, Swords, 
-  Trophy, Search, Filter, X, ArrowUpRight, MessageCircle 
+  Trophy, Search, Filter, X, ArrowUpRight, MessageCircle, Music, Apple
 } from 'lucide-react';
 import { programsData } from '../data';
 import { Program } from '../types';
@@ -26,6 +26,8 @@ const getProgramIcon = (iconName: string) => {
     case 'Heart': return <Heart {...props} />;
     case 'Swords': return <Swords {...props} />;
     case 'Trophy': return <Trophy {...props} />;
+    case 'Music': return <Music {...props} />;
+    case 'Apple': return <Apple {...props} />;
     default: return <Dumbbell {...props} />;
   }
 };
@@ -45,8 +47,8 @@ export default function Programs() {
   });
 
   const handleBookProgramWhatsApp = (programTitle: string) => {
-    const msg = `Hello Karnataka Gym, I would like to book a slot for the program: "${programTitle}". Please share slot timings.`;
-    window.open(`https://wa.me/919876543210?text=${encodeURIComponent(msg)}`, '_blank');
+    const msg = `Hello Jairaj Fitness Gym, I would like to book a slot for the program: "${programTitle}". Please share slot timings.`;
+    window.open(`https://wa.me/917795559029?text=${encodeURIComponent(msg)}`, '_blank');
   };
 
   return (

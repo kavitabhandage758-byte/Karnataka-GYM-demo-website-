@@ -103,10 +103,10 @@ export default function Navbar({ onOpenBookingModal, isDarkMode, onToggleDarkMod
               </div>
               <div>
                 <span className="font-display font-black text-xl tracking-tight text-white block leading-none">
-                  KARNATAKA<span className="text-electric-orange"> GYM</span>
+                  JAIRAJ<span className="text-electric-orange"> FITNESS</span>
                 </span>
                 <span className="text-[9px] uppercase tracking-widest font-bold text-neutral-500 block mt-0.5">
-                  BENGALURU EST. 2014
+                  BELAGAVI EST. 2005
                 </span>
               </div>
             </div>
@@ -321,7 +321,7 @@ export default function Navbar({ onOpenBookingModal, isDarkMode, onToggleDarkMod
       {/* FLOATING WHATSAPP BUTTON */}
       <a
         id="floating-whatsapp-action-bubble"
-        href="https://wa.me/919876543210?text=Hello%20Karnataka%20Gym%2C%20I%20would%20like%20to%20know%20more%20about%20your%20membership%20plans."
+        href="https://wa.me/917795559029?text=Hello%20Jairaj%20Fitness%20Gym%2C%20I%20would%20like%20to%20know%20more%20about%20your%20membership%20plans."
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 left-6 z-30 bg-green-500 hover:bg-green-600 text-white p-3.5 rounded-full shadow-lg shadow-green-500/20 hover:scale-105 transition-all border border-white/10 flex items-center justify-center cursor-pointer"
