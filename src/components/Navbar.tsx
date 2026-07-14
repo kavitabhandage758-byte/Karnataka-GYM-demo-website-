@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X, Sun, Moon, Search, Dumbbell, ArrowRight, Phone } from 'lucide-react';
+import { Menu, X, Search, Dumbbell, ArrowRight } from 'lucide-react';
 import { programsData, trainersData, articlesData } from '../data';
 
 interface NavbarProps {
@@ -137,16 +137,6 @@ export default function Navbar({ onOpenBookingModal, isDarkMode, onToggleDarkMod
                 <Search size={16} />
               </button>
 
-              {/* Theme Toggle */}
-              <button
-                id="btn-nav-theme-toggle"
-                onClick={onToggleDarkMode}
-                className="text-neutral-400 hover:text-white p-2 rounded-lg transition-colors cursor-pointer"
-                aria-label="Toggle theme mode"
-              >
-                {isDarkMode ? <Sun size={16} className="text-yellow-400" /> : <Moon size={16} />}
-              </button>
-
               {/* Join Now Button */}
               <button
                 id="btn-nav-join-now"
@@ -165,13 +155,6 @@ export default function Navbar({ onOpenBookingModal, isDarkMode, onToggleDarkMod
                 className="text-neutral-400 p-2 rounded-lg"
               >
                 <Search size={18} />
-              </button>
-              <button
-                id="btn-nav-mobile-theme"
-                onClick={onToggleDarkMode}
-                className="text-neutral-400 p-2 rounded-lg"
-              >
-                {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
               </button>
               <button
                 id="btn-nav-hamburger"
@@ -327,7 +310,9 @@ export default function Navbar({ onOpenBookingModal, isDarkMode, onToggleDarkMod
         className="fixed bottom-6 left-6 z-30 bg-green-500 hover:bg-green-600 text-white p-3.5 rounded-full shadow-lg shadow-green-500/20 hover:scale-105 transition-all border border-white/10 flex items-center justify-center cursor-pointer"
         aria-label="Chat on WhatsApp"
       >
-        <Phone size={18} className="transform rotate-0" />
+        <svg className="w-[18px] h-[18px] fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.004 0C5.378 0 0 5.381 0 12.004c0 2.116.549 4.106 1.512 5.851L0 24l6.326-1.66c1.713.931 3.666 1.463 5.748 1.463 6.626 0 12.004-5.381 12.004-12.004C24.078 5.381 18.7 0 12.004 0zm0 1.914c5.58 0 10.09 4.512 10.09 10.09s-4.51 10.09-10.09 10.09c-1.841 0-3.58-.493-5.088-1.353l-.365-.21-3.774.99.998-3.644-.23-.377c-.947-1.547-1.45-3.328-1.45-5.18 0-5.578 4.511-10.09 10.09-10.09zm-4.484 4.536c-.198 0-.396.052-.553.155-.387.251-.624.593-.728.995-.23.882.046 1.947.886 3.036.797 1.034 1.83 2.016 3.125 2.923s2.464 1.488 3.398 1.84c.661.248 1.154.237 1.52.193.5-.06 1.018-.328 1.173-.807.126-.39.123-.746.069-.81-.054-.065-.198-.117-.417-.225-.22-.11-1.288-.636-1.487-.708s-.343-.11-.486.103c-.144.212-.556.708-.68.852-.125.144-.248.163-.467.054a5.9 5.9 0 0 1-1.74-1.071 6.51 6.51 0 0 1-1.205-1.498c-.125-.213-.013-.328.096-.436.098-.098.22-.255.33-.383.11-.128.147-.218.22-.363.074-.145.037-.272-.018-.38-.055-.11-.488-1.18-.668-1.614-.176-.423-.353-.365-.485-.371-.126-.006-.27-.008-.415-.008z"/>
+        </svg>
         <span className="hidden md:inline-block max-w-0 group-hover:max-w-xs transition-all duration-300 font-bold text-[10px] uppercase ml-1.5 whitespace-nowrap overflow-hidden">
           WhatsApp Support
         </span>
