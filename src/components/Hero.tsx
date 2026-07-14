@@ -109,14 +109,6 @@ export default function Hero({ onOpenBookingModal }: HeroProps) {
                 Book Free Trial <Play size={14} fill="currentColor" />
               </button>
 
-              <button
-                id="btn-hero-calculate-bmi"
-                onClick={handleScrollToCalculators}
-                className="bg-neutral-950/60 hover:bg-neutral-900 border border-neutral-800 text-neutral-300 text-xs font-bold py-4 px-6 rounded-lg uppercase tracking-wider transition-all cursor-pointer"
-              >
-                Calculate BMI
-              </button>
-
               <a
                 id="btn-hero-whatsapp"
                 href="https://wa.me/917795559029?text=Hello%20Jairaj%20Fitness%20Gym%2C%20I%20would%20like%20to%20know%20more%20about%20your%20membership%20plans."

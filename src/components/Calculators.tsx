@@ -215,9 +215,24 @@ export default function Calculators() {
   }, [bfGender, bfHeight, bfWaist, bfNeck, bfHip]);
 
   return (
-    <div className="w-full">
-      {/* Selector Tabs */}
-      <div className="flex flex-wrap gap-2 mb-8 bg-neutral-900/60 p-2 rounded-xl border border-neutral-800">
+    <section id="calculators" className="py-20 md:py-28 relative overflow-hidden bg-neutral-950 border-t border-neutral-900/40">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Header Title */}
+        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4 animate-on-scroll">
+          <span className="text-electric-orange text-xs font-bold tracking-widest uppercase border border-electric-orange/20 px-3 py-1 rounded-full bg-electric-orange/5">
+            Fitness Analytics
+          </span>
+          <h2 className="text-3xl md:text-5xl font-display font-black text-white uppercase tracking-tight leading-none">
+            Health & Fitness <span className="text-electric-orange">Calculators</span>
+          </h2>
+          <p className="text-neutral-500 text-xs md:text-sm leading-relaxed">
+            Get accurate, scientifically backed evaluations of your body mass index, daily calorie expenditure, metabolic rate, protein requirements, and target body fat percentages.
+          </p>
+        </div>
+
+        {/* Selector Tabs */}
+        <div className="flex flex-wrap gap-2 mb-8 bg-neutral-900/60 p-2 rounded-xl border border-neutral-800">
         <button
           id="btn-tab-bmi"
           onClick={() => setActiveTab('bmi')}
@@ -792,5 +807,6 @@ export default function Calculators() {
         </div>
       </div>
     </div>
-  );
+  </section>
+);
 }
